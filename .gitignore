@@ -1,0 +1,11 @@
+# build dir
+dist
+
+# npm
+node_modules
+.npm
+npm-debug.log
+
+# misc
+.DS_Store
+.idea
