@@ -35,6 +35,13 @@ be `thunks` that do whatever they want. This mix of concerns makes the flow of t
 have the guarantee that a call to `dispatch()` is dispatching an action that is going to be handled by a reducer/s. Instead
 you need to manually trace the flow of a `dispatch()` call to know what its doing.
 
+#### Redux-promise-middleware
+
+`redux-promise-middleware` conceptually works exactly the same as `redux-thunk` except that is does some more 'magic'
+than `redux-thunk`. With `redux-promise-middleware` you directly dispatch a promise within an action and the middleware
+automatically dispatches the appropriate actions for you (with `_PENDING`, `_FULFILLED` and `_REJECTED` suffixes).
+Therefore the tradeoffs compared to `redux-thunk` are less boilerplate, but less flexibility.
+
 #### Redux-saga
 
 `redux-saga` doesn't have the separation of concerns issue like `redux-thunk` does, actions and reducers in `redux-saga`
