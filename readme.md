@@ -4,6 +4,7 @@ Example of different ways to manage async in React. The same sample application 
 
 - Native react - using `setState()` and `promises`
 - Redux - with `redux-thunk` middleware
+- Redux - with `redux-promise-middleware` middleware
 - Redux - with `redux-saga` middleware
 - Redux - with `redux-observable` middleware
 
